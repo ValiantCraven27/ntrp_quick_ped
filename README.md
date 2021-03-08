@@ -12,3 +12,5 @@ TODO: Add cloaks, more peds, gunbelts, hats
 /ped.outfit 0-10
 /gunbelt.male 0-32
 /gunbelt.female 0-32
+
+requires pNotity
