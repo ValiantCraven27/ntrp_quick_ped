@@ -1,4 +1,5 @@
 # ntrp_quick_ped
+Author "Adam Bravo | ValiantCraven27"
 
 To be used with RedM
 
