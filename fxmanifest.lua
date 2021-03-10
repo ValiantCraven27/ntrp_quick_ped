@@ -17,5 +17,5 @@ client_scripts {
   'client/gunbelts.lua',
   'client/hats.lua',
   'client/cloaks.lua',
-  'client/eyewear'
+  'client/eyewear.lua'
 }
