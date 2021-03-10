@@ -9,6 +9,7 @@ server_scripts {
 }
 
 client_scripts {
+ 
   'config.lua',
   'client/male.lua',
   'client/female.lua',
@@ -16,5 +17,5 @@ client_scripts {
   'client/gunbelts.lua',
   'client/hats.lua',
   'client/cloaks.lua',
-  'client/menu.lua'
+  'client/eyewear'
 }
