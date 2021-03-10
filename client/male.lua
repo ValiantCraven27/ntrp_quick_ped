@@ -1,6 +1,3 @@
-TriggerEvent('chat:addSuggestion', '/ped.male', 'Set a ped for Males', {
-    { name="Change Model", help="Male Peds: 0 - 101" }
-})
 
 
 if Config.UseQuickPed then
@@ -20,6 +17,10 @@ if Config.UseQuickPed then
                                                 SetEntityAsMissionEntity(PlayerPedId(), true, true)
 		end)
 end
+
+TriggerEvent('chat:addSuggestion', '/ped.male', 'Set a ped for Males', {
+    { name="Change Model", help="Male Peds: 0 - 101" }
+})
 
 
 RegisterCommand('ped.male', function(source,args)
