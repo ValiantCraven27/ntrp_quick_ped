@@ -10,11 +10,11 @@ Citizen.CreateThread(function()
 end)
 
 TriggerEvent('chat:addSuggestion', '/gunbelt.male', 'Change Gunbelt', {
-    { name="Gunbelt", help="gunbelts: 0 - 32" }
+    { name="Gunbelt", help="gunbelts: 0 - 40" }
 })
 
 TriggerEvent('chat:addSuggestion', '/gunbelt.female', 'Change Gunbelt', {
-    { name="Gunbelt", help="gunbelts: 0 - 32" }
+    { name="Gunbelt", help="gunbelts: 0 - 40" }
 })
 
 -- MALE.GUNBELTS --
@@ -90,7 +90,22 @@ RegisterCommand('gunbelt.male', function(source,args)
 		TriggerEvent('male:gunbelt31', id)		
 	elseif ped == '32' then
 		TriggerEvent('male:gunbelt32', id)
-              
+                elseif ped == '33' then
+		TriggerEvent('male:gunbelt33', id)		
+	elseif ped == '34' then
+		TriggerEvent('male:gunbelt34', id)
+                elseif ped == '35' then
+		TriggerEvent('male:gunbelt35', id)
+                elseif ped == '36' then
+		TriggerEvent('male:gunbelt36', id)		
+	elseif ped == '37' then
+		TriggerEvent('male:gunbelt37', id)		
+	elseif ped == '38' then
+		TriggerEvent('male:gunbelt38', id)		
+	elseif ped == '39' then
+		TriggerEvent('male:gunbelt39', id)		
+	elseif ped == '40' then
+		TriggerEvent('male:gunbelt40', id)
                 end
 end)
 
@@ -292,6 +307,54 @@ NotifyGunbelt()
 Citizen.InvokeNative(0xD3A7B003ED343FD9,PlayerPedId(),0x6DD75206,true,true,true)
 end)
 
+RegisterNetEvent('male:gunbelt33')
+AddEventHandler('male:gunbelt33', function()
+NotifyGunbelt()
+Citizen.InvokeNative(0xD3A7B003ED343FD9,PlayerPedId(),0xACB0BEB,true,true,true)
+end)
+
+RegisterNetEvent('male:gunbelt34')
+AddEventHandler('male:gunbelt34', function()
+NotifyGunbelt()
+Citizen.InvokeNative(0xD3A7B003ED343FD9,PlayerPedId(),0xEEBDD3CD,true,true,true)
+end)
+
+RegisterNetEvent('male:gunbelt35')
+AddEventHandler('male:gunbelt35', function()
+NotifyGunbelt()
+Citizen.InvokeNative(0xD3A7B003ED343FD9,PlayerPedId(),0x2E7B7D68,true,true,true)
+end)
+
+RegisterNetEvent('male:gunbelt36')
+AddEventHandler('male:gunbelt36', function()
+NotifyGunbelt()
+Citizen.InvokeNative(0xD3A7B003ED343FD9,PlayerPedId(),0x900B273,true,true,true)
+end)
+
+RegisterNetEvent('male:gunbelt37')
+AddEventHandler('male:gunbelt37', function()
+NotifyGunbelt()
+Citizen.InvokeNative(0xD3A7B003ED343FD9,PlayerPedId(),0xD6404CF3,true,true,true)
+end)
+
+RegisterNetEvent('male:gunbelt38')
+AddEventHandler('male:gunbelt38', function()
+NotifyGunbelt()
+Citizen.InvokeNative(0xD3A7B003ED343FD9,PlayerPedId(),0xFBC617FE,true,true,true)
+end)
+
+RegisterNetEvent('male:gunbelt39')
+AddEventHandler('male:gunbelt39', function()
+NotifyGunbelt()
+Citizen.InvokeNative(0xD3A7B003ED343FD9,PlayerPedId(),0x836A9D04,true,true,true)
+end)
+
+RegisterNetEvent('male:gunbelt40')
+AddEventHandler('male:gunbelt40', function()
+NotifyGunbelt()
+Citizen.InvokeNative(0xD3A7B003ED343FD9,PlayerPedId(),0x91353899,true,true,true)
+end)
+
 -- FEMALE.GUNBELTS --
 
 RegisterCommand('gunbelt.female', function(source,args)
@@ -361,10 +424,26 @@ RegisterCommand('gunbelt.female', function(source,args)
 		TriggerEvent('female:gunbelt29', id)		
 	elseif ped == '30' then
 		TriggerEvent('female:gunbelt30', id)
-                elseif ped == '31' then
+    elseif ped == '31' then
 		TriggerEvent('female:gunbelt31', id)
-                elseif ped == '32' then
+    elseif ped == '32' then
 		TriggerEvent('female:gunbelt32', id)
+    elseif ped == '33' then
+		TriggerEvent('female:gunbelt33', id)		
+	elseif ped == '34' then
+		TriggerEvent('female:gunbelt34', id)
+    elseif ped == '35' then
+		TriggerEvent('female:gunbelt35', id)
+    elseif ped == '36' then
+		TriggerEvent('female:gunbelt36', id)		
+	elseif ped == '37' then
+		TriggerEvent('female:gunbelt37', id)		
+	elseif ped == '38' then
+		TriggerEvent('female:gunbelt38', id)
+    elseif ped == '39' then
+		TriggerEvent('female:gunbelt39', id)
+    elseif ped == '40' then
+		TriggerEvent('female:gunbelt40', id)
                 end
 end)
 
@@ -564,6 +643,54 @@ RegisterNetEvent('female:gunbelt32')
 AddEventHandler('female:gunbelt32', function()
 NotifyGunbelt()
 Citizen.InvokeNative(0xD3A7B003ED343FD9,PlayerPedId(),0xD2764721,true,true,true)
+end)
+
+RegisterNetEvent('female:gunbelt33')
+AddEventHandler('female:gunbelt33', function() 
+NotifyGunbelt()
+Citizen.InvokeNative(0xD3A7B003ED343FD9,PlayerPedId(),0xE13AE4AA,true,true,true)
+end)
+
+RegisterNetEvent('female:gunbelt34')
+AddEventHandler('female:gunbelt34', function()
+NotifyGunbelt()
+Citizen.InvokeNative(0xD3A7B003ED343FD9,PlayerPedId(),0x18FEAD3B,true,true,true)
+end)
+
+RegisterNetEvent('female:gunbelt35')
+AddEventHandler('female:gunbelt35', function() 
+NotifyGunbelt()
+Citizen.InvokeNative(0xD3A7B003ED343FD9,PlayerPedId(),0x2A845046,true,true,true)
+end)
+
+RegisterNetEvent('female:gunbelt36')
+AddEventHandler('female:gunbelt36', function() 
+NotifyGunbelt()
+Citizen.InvokeNative(0xD3A7B003ED343FD9,PlayerPedId(),0x668FC85C,true,true,true)
+end)
+
+RegisterNetEvent('female:gunbelt37')
+AddEventHandler('female:gunbelt37', function() 
+NotifyGunbelt()
+Citizen.InvokeNative(0xD3A7B003ED343FD9,PlayerPedId(),0xA0E0F5A,true,true,true)
+end)
+
+RegisterNetEvent('female:gunbelt38')
+AddEventHandler('female:gunbelt38', function() 
+NotifyGunbelt()
+Citizen.InvokeNative(0xD3A7B003ED343FD9,PlayerPedId(),0x5C788179,true,true,true)
+end)
+
+RegisterNetEvent('female:gunbelt39')
+AddEventHandler('female:gunbelt39', function()
+NotifyGunbelt()
+Citizen.InvokeNative(0xD3A7B003ED343FD9,PlayerPedId(),0xA53492F0,true,true,true)
+end)
+
+RegisterNetEvent('female:gunbelt40')
+AddEventHandler('female:gunbelt40', function()
+NotifyGunbelt()
+Citizen.InvokeNative(0xD3A7B003ED343FD9,PlayerPedId(),0xB6EB365D,true,true,true)
 end)
 
 function NotifyGunbelt()

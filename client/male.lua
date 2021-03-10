@@ -9,6 +9,11 @@ Citizen.CreateThread(function()
 	end
 end)
 
+RegisterCommand("ped.save",function()
+model = GetEntityModel(PlayerPedId())
+TriggerServerEvent('Quick_Ped:Model', model)
+end)
+
 TriggerEvent('chat:addSuggestion', '/ped.male', 'Set a ped for Males', {
     { name="Change Model", help="Male Peds: 0 - 101" }
 })
@@ -25,7 +30,7 @@ if Config.UseQuickPed then
 			end	
 			NotifyStart()
                                                 Citizen.Wait(5000)
-                                                --Citizen.InvokeNative(0x704C908E9C405136, PlayerPedId())
+                                                Citizen.InvokeNative(0x704C908E9C405136, PlayerPedId())
 			SetPlayerModel(GetPlayerPed(-1), hash, 0)
                                                 SetPedRandomComponentVariation(PlayerPedId(),0)
                                                 SetEntityAsMissionEntity(PlayerPedId(), true, true)
