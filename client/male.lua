@@ -1,19 +1,3 @@
-RDX = nil
-
-Citizen.CreateThread(function()
-	while RDX == nil do
-		TriggerEvent('rdx:getSharedObject', function(obj) RDX = obj end)
-		Citizen.Wait(0)
-                      
-                    
-	end
-end)
-
-RegisterCommand("ped.save",function()
-model = GetEntityModel(PlayerPedId())
-TriggerServerEvent('Quick_Ped:Model', model)
-end)
-
 TriggerEvent('chat:addSuggestion', '/ped.male', 'Set a ped for Males', {
     { name="Change Model", help="Male Peds: 0 - 101" }
 })
