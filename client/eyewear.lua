@@ -1,9 +1,9 @@
 
-TriggerEvent('ceyewear:addSuggestion', '/eyewear.male', 'Change Eyewear', {
+TriggerEvent('eyewear:addSuggestion', '/eyewear.male', 'Change Eyewear', {
     { name="eyewear", help="eyewear: 0 - 19" }
 })
 
-TriggerEvent('ceyewear:addSuggestion', '/eyewear.female', 'Change Eyewear', {
+TriggerEvent('eyewear:addSuggestion', '/eyewear.female', 'Change Eyewear', {
     { name="eyewear", help="eyewear: 0 - 17" }
 })
 
@@ -335,4 +335,18 @@ AddEventHandler('female:eyewear17', function()
 NotifyGunbelt()
 Citizen.InvokeNative(0xD3A7B003ED343FD9,PlayerPedId(),0xF473211B,true,true,true)
 end)
+
+
+function NotifyEyewear()
+ exports.pNotify:SendNotification({
+            text = "Changing Eyewear", 
+            type = "info",
+            theme = "relax", 
+            timeout = math.random(3000, 3000), 
+            layout = "centerLeft", 
+            queue = "left"
+        })
+ 
+      end
+
 
