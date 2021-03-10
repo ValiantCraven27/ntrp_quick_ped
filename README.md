@@ -7,7 +7,6 @@ requires pNotity
 
 Quickly change Peds, Gunbelts, Hats. updating every few days 
 
-TODO: Add cloaks, more peds, gunbelts, hats
 /revive : used for deathscript pulled from my ntrp_framework
 /ped.male 0-101
 /mp.male 0 - 22
@@ -22,4 +21,7 @@ TODO: Add cloaks, more peds, gunbelts, hats
 /eyewear.male  0 - 19
 /eyewear.female  0 - 17
 
+Config.UseQuickPed = true   -- Use this Script to Spawn First Ped when spawning in | true or false
+Config.StartModel = 'A_M_M_ARMTOWNFOLK_01'  -- Ped you want to spawn first in when you log in | Config.UseQuickPed = true
 
+Config.UseDeathScript = true -- true or false
