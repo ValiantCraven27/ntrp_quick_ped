@@ -2,10 +2,6 @@ TriggerEvent('chat:addSuggestion', '/ped.female', 'Set your ped as a Female', {
     { name="Model", help="Female Peds: 0 - 61" }
 })
 
-RegisterCommand('eat', function()
-TaskEnterTransport()
-end)
-
 
 
 -- FEMALE PEDS --
