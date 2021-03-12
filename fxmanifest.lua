@@ -21,5 +21,5 @@ client_scripts {
   'client/hats.lua',
   'client/cloaks.lua',
   'client/eyewear.lua',
-  'client/saddles.lua'
+  'client/horse_cl.lua'
 }
