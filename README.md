@@ -22,6 +22,13 @@ Quickly change Peds, Gunbelts, Hats. updating every few days
 /eyewear.male  0 - 19
 /eyewear.female  0 - 17
 /saddle 0 - 20 -- changes saddle of Last mount or Current your riding
+/horsetail 0 - 40
+/mane 0 - 40
+/saddlebag 0 -19
+/luggage 0 - 20
+/horn 0 -14
+/stirrups 0 - 10
+
 
 Config.UseQuickPed = true   -- Use this Script to Spawn First Ped when spawning in | true or false
 Config.StartModel = 'A_M_M_ARMTOWNFOLK_01'  -- Ped you want to spawn first in when you log in | Config.UseQuickPed = true
